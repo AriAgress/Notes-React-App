@@ -21,9 +21,13 @@ function App() {
     },
   ]);
 
+  const addNote = text => {
+    console.log(text);
+  };
+
   return (
     <div className='container'>
-      <NotesList notes={notes} />
+      <NotesList notes={notes} handleAddNote={addNote} />
     </div>
   );
 }
