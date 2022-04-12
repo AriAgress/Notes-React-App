@@ -8,8 +8,10 @@ const AddNote = ({ handleAddNote }) => {
   };
 
   const handleSaveClick = () => {
-    handleAddNote(noteText);
-    // setNoteText('');
+    if (noteText.trim().length > 0) {
+      handleAddNote(noteText);
+      setNoteText('');
+    }
   };
 
   return (
