@@ -21,6 +21,16 @@ function App() {
       text: 'This is 3 note',
       date: '13/04/2001',
     },
+    {
+      id: nanoid(),
+      text: 'This is 4 note',
+      date: '13/04/2001',
+    },
+    {
+      id: nanoid(),
+      text: 'This is 5 note',
+      date: '13/04/2001',
+    },
   ]);
 
   const [searchText, setSearchText] = useState('');
